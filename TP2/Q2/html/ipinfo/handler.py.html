@@ -1,0 +1,944 @@
+<html><body><h1>ipinfo\handler.py</h1>Killed 27 out of 111 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 64</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -46,7 +46,7 @@
+ 
+         # load countries file
+         self.countries = handler_utils.read_json_file(
+-            kwargs.get("countries_file")
++            kwargs.get("XXcountries_fileXX")
+             if kwargs.get("countries_file")
+             else COUNTRY_FILE_DEFAULT
+         )
+</pre><h3>Mutant 65</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -47,7 +47,7 @@
+         # load countries file
+         self.countries = handler_utils.read_json_file(
+             kwargs.get("countries_file")
+-            if kwargs.get("countries_file")
++            if kwargs.get("XXcountries_fileXX")
+             else COUNTRY_FILE_DEFAULT
+         )
+ 
+</pre><h3>Mutant 67</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -53,7 +53,7 @@
+ 
+         # load eu countries file
+         self.eu_countries = handler_utils.read_json_file(
+-            kwargs.get("eu_countries_file")
++            kwargs.get("XXeu_countries_fileXX")
+             if kwargs.get("eu_countries_file")
+             else COUNTRY_EU_FILE_DEFAULT
+         )
+</pre><h3>Mutant 68</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -54,7 +54,7 @@
+         # load eu countries file
+         self.eu_countries = handler_utils.read_json_file(
+             kwargs.get("eu_countries_file")
+-            if kwargs.get("eu_countries_file")
++            if kwargs.get("XXeu_countries_fileXX")
+             else COUNTRY_EU_FILE_DEFAULT
+         )
+ 
+</pre><h3>Mutant 69</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -52,11 +52,7 @@
+         )
+ 
+         # load eu countries file
+-        self.eu_countries = handler_utils.read_json_file(
+-            kwargs.get("eu_countries_file")
+-            if kwargs.get("eu_countries_file")
+-            else COUNTRY_EU_FILE_DEFAULT
+-        )
++        self.eu_countries = None
+ 
+         # load countries flags file
+         self.countries_flags = handler_utils.read_json_file(
+</pre><h3>Mutant 70</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -60,7 +60,7 @@
+ 
+         # load countries flags file
+         self.countries_flags = handler_utils.read_json_file(
+-            kwargs.get("countries_flags_file")
++            kwargs.get("XXcountries_flags_fileXX")
+             if kwargs.get("countries_flags_file")
+             else COUNTRY_FLAG_FILE_DEFAULT
+         )
+</pre><h3>Mutant 71</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -61,7 +61,7 @@
+         # load countries flags file
+         self.countries_flags = handler_utils.read_json_file(
+             kwargs.get("countries_flags_file")
+-            if kwargs.get("countries_flags_file")
++            if kwargs.get("XXcountries_flags_fileXX")
+             else COUNTRY_FLAG_FILE_DEFAULT
+         )
+ 
+</pre><h3>Mutant 72</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -59,11 +59,7 @@
+         )
+ 
+         # load countries flags file
+-        self.countries_flags = handler_utils.read_json_file(
+-            kwargs.get("countries_flags_file")
+-            if kwargs.get("countries_flags_file")
+-            else COUNTRY_FLAG_FILE_DEFAULT
+-        )
++        self.countries_flags = None
+ 
+         # load countries currency file
+         self.countries_currencies = handler_utils.read_json_file(
+</pre><h3>Mutant 73</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -67,7 +67,7 @@
+ 
+         # load countries currency file
+         self.countries_currencies = handler_utils.read_json_file(
+-            kwargs.get("countries_currencies_file")
++            kwargs.get("XXcountries_currencies_fileXX")
+             if kwargs.get("countries_currencies_file")
+             else COUNTRY_CURRENCY_FILE_DEFAULT
+         )
+</pre><h3>Mutant 74</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -68,7 +68,7 @@
+         # load countries currency file
+         self.countries_currencies = handler_utils.read_json_file(
+             kwargs.get("countries_currencies_file")
+-            if kwargs.get("countries_currencies_file")
++            if kwargs.get("XXcountries_currencies_fileXX")
+             else COUNTRY_CURRENCY_FILE_DEFAULT
+         )
+ 
+</pre><h3>Mutant 75</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -66,11 +66,7 @@
+         )
+ 
+         # load countries currency file
+-        self.countries_currencies = handler_utils.read_json_file(
+-            kwargs.get("countries_currencies_file")
+-            if kwargs.get("countries_currencies_file")
+-            else COUNTRY_CURRENCY_FILE_DEFAULT
+-        )
++        self.countries_currencies = None
+ 
+         # load continent file
+         self.continents = handler_utils.read_json_file(
+</pre><h3>Mutant 76</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -74,7 +74,7 @@
+ 
+         # load continent file
+         self.continents = handler_utils.read_json_file(
+-            kwargs.get("continent_file")
++            kwargs.get("XXcontinent_fileXX")
+             if kwargs.get("continent_file")
+             else CONTINENT_FILE_DEFAULT
+         )
+</pre><h3>Mutant 77</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -75,7 +75,7 @@
+         # load continent file
+         self.continents = handler_utils.read_json_file(
+             kwargs.get("continent_file")
+-            if kwargs.get("continent_file")
++            if kwargs.get("XXcontinent_fileXX")
+             else CONTINENT_FILE_DEFAULT
+         )
+ 
+</pre><h3>Mutant 78</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -73,11 +73,7 @@
+         )
+ 
+         # load continent file
+-        self.continents = handler_utils.read_json_file(
+-            kwargs.get("continent_file")
+-            if kwargs.get("continent_file")
+-            else CONTINENT_FILE_DEFAULT
+-        )
++        self.continents = None
+ 
+         # setup req opts
+         self.request_options = kwargs.get("request_options", {})
+</pre><h3>Mutant 79</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -80,7 +80,7 @@
+         )
+ 
+         # setup req opts
+-        self.request_options = kwargs.get("request_options", {})
++        self.request_options = kwargs.get("XXrequest_optionsXX", {})
+         if "timeout" not in self.request_options:
+             self.request_options["timeout"] = REQUEST_TIMEOUT_DEFAULT
+ 
+</pre><h3>Mutant 81</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -81,7 +81,7 @@
+ 
+         # setup req opts
+         self.request_options = kwargs.get("request_options", {})
+-        if "timeout" not in self.request_options:
++        if "XXtimeoutXX" not in self.request_options:
+             self.request_options["timeout"] = REQUEST_TIMEOUT_DEFAULT
+ 
+         # setup cache
+</pre><h3>Mutant 82</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -81,7 +81,7 @@
+ 
+         # setup req opts
+         self.request_options = kwargs.get("request_options", {})
+-        if "timeout" not in self.request_options:
++        if "timeout"  in self.request_options:
+             self.request_options["timeout"] = REQUEST_TIMEOUT_DEFAULT
+ 
+         # setup cache
+</pre><h3>Mutant 84</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -82,7 +82,7 @@
+         # setup req opts
+         self.request_options = kwargs.get("request_options", {})
+         if "timeout" not in self.request_options:
+-            self.request_options["timeout"] = REQUEST_TIMEOUT_DEFAULT
++            self.request_options["timeout"] = None
+ 
+         # setup cache
+         if "cache" in kwargs:
+</pre><h3>Mutant 85</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -85,7 +85,7 @@
+             self.request_options["timeout"] = REQUEST_TIMEOUT_DEFAULT
+ 
+         # setup cache
+-        if "cache" in kwargs:
++        if "XXcacheXX" in kwargs:
+             self.cache = kwargs["cache"]
+         else:
+             cache_options = kwargs.get("cache_options", {})
+</pre><h3>Mutant 87</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -86,7 +86,7 @@
+ 
+         # setup cache
+         if "cache" in kwargs:
+-            self.cache = kwargs["cache"]
++            self.cache = kwargs["XXcacheXX"]
+         else:
+             cache_options = kwargs.get("cache_options", {})
+             if "maxsize" not in cache_options:
+</pre><h3>Mutant 88</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -86,7 +86,7 @@
+ 
+         # setup cache
+         if "cache" in kwargs:
+-            self.cache = kwargs["cache"]
++            self.cache = None
+         else:
+             cache_options = kwargs.get("cache_options", {})
+             if "maxsize" not in cache_options:
+</pre><h3>Mutant 89</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -88,7 +88,7 @@
+         if "cache" in kwargs:
+             self.cache = kwargs["cache"]
+         else:
+-            cache_options = kwargs.get("cache_options", {})
++            cache_options = kwargs.get("XXcache_optionsXX", {})
+             if "maxsize" not in cache_options:
+                 cache_options["maxsize"] = CACHE_MAXSIZE
+             if "ttl" not in cache_options:
+</pre><h3>Mutant 91</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -89,7 +89,7 @@
+             self.cache = kwargs["cache"]
+         else:
+             cache_options = kwargs.get("cache_options", {})
+-            if "maxsize" not in cache_options:
++            if "XXmaxsizeXX" not in cache_options:
+                 cache_options["maxsize"] = CACHE_MAXSIZE
+             if "ttl" not in cache_options:
+                 cache_options["ttl"] = CACHE_TTL
+</pre><h3>Mutant 94</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -90,7 +90,7 @@
+         else:
+             cache_options = kwargs.get("cache_options", {})
+             if "maxsize" not in cache_options:
+-                cache_options["maxsize"] = CACHE_MAXSIZE
++                cache_options["maxsize"] = None
+             if "ttl" not in cache_options:
+                 cache_options["ttl"] = CACHE_TTL
+             self.cache = DefaultCache(**cache_options)
+</pre><h3>Mutant 95</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -91,7 +91,7 @@
+             cache_options = kwargs.get("cache_options", {})
+             if "maxsize" not in cache_options:
+                 cache_options["maxsize"] = CACHE_MAXSIZE
+-            if "ttl" not in cache_options:
++            if "XXttlXX" not in cache_options:
+                 cache_options["ttl"] = CACHE_TTL
+             self.cache = DefaultCache(**cache_options)
+ 
+</pre><h3>Mutant 98</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -92,7 +92,7 @@
+             if "maxsize" not in cache_options:
+                 cache_options["maxsize"] = CACHE_MAXSIZE
+             if "ttl" not in cache_options:
+-                cache_options["ttl"] = CACHE_TTL
++                cache_options["ttl"] = None
+             self.cache = DefaultCache(**cache_options)
+ 
+     def getDetails(self, ip_address=None, timeout=None):
+</pre><h3>Mutant 100</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -105,7 +105,7 @@
+         # If the supplied IP address uses the objects defined in the built-in
+         # module ipaddress extract the appropriate string notation before
+         # formatting the URL.
+-        if isinstance(ip_address, IPv4Address) or isinstance(
++        if isinstance(ip_address, IPv4Address) and isinstance(
+             ip_address, IPv6Address
+         ):
+             ip_address = ip_address.exploded
+</pre><h3>Mutant 101</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -108,7 +108,7 @@
+         if isinstance(ip_address, IPv4Address) or isinstance(
+             ip_address, IPv6Address
+         ):
+-            ip_address = ip_address.exploded
++            ip_address = None
+ 
+         # check if bogon.
+         if ip_address and is_bogon(ip_address):
+</pre><h3>Mutant 102</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -111,7 +111,7 @@
+             ip_address = ip_address.exploded
+ 
+         # check if bogon.
+-        if ip_address and is_bogon(ip_address):
++        if ip_address or is_bogon(ip_address):
+             details = {}
+             details["ip"] = ip_address
+             details["bogon"] = True
+</pre><h3>Mutant 109</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -119,7 +119,7 @@
+ 
+         # check cache first.
+         try:
+-            cached_ipaddr = self.cache[cache_key(ip_address)]
++            cached_ipaddr = None
+             return Details(cached_ipaddr)
+         except KeyError:
+             pass
+</pre><h3>Mutant 110</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -125,7 +125,7 @@
+             pass
+ 
+         # prepare req http opts
+-        req_opts = {**self.request_options}
++        req_opts = {*self.request_options}
+         if timeout is not None:
+             req_opts["timeout"] = timeout
+ 
+</pre><h3>Mutant 111</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -125,7 +125,7 @@
+             pass
+ 
+         # prepare req http opts
+-        req_opts = {**self.request_options}
++        req_opts = None
+         if timeout is not None:
+             req_opts["timeout"] = timeout
+ 
+</pre><h3>Mutant 112</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -126,7 +126,7 @@
+ 
+         # prepare req http opts
+         req_opts = {**self.request_options}
+-        if timeout is not None:
++        if timeout is  None:
+             req_opts["timeout"] = timeout
+ 
+         # not in cache; do http req
+</pre><h3>Mutant 113</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -127,7 +127,7 @@
+         # prepare req http opts
+         req_opts = {**self.request_options}
+         if timeout is not None:
+-            req_opts["timeout"] = timeout
++            req_opts["XXtimeoutXX"] = timeout
+ 
+         # not in cache; do http req
+         url = API_URL
+</pre><h3>Mutant 114</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -127,7 +127,7 @@
+         # prepare req http opts
+         req_opts = {**self.request_options}
+         if timeout is not None:
+-            req_opts["timeout"] = timeout
++            req_opts["timeout"] = None
+ 
+         # not in cache; do http req
+         url = API_URL
+</pre><h3>Mutant 115</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -130,7 +130,7 @@
+             req_opts["timeout"] = timeout
+ 
+         # not in cache; do http req
+-        url = API_URL
++        url = None
+         if ip_address:
+             url += "/" + ip_address
+         headers = handler_utils.get_headers(self.access_token)
+</pre><h3>Mutant 116</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -132,7 +132,7 @@
+         # not in cache; do http req
+         url = API_URL
+         if ip_address:
+-            url += "/" + ip_address
++            url = "/" + ip_address
+         headers = handler_utils.get_headers(self.access_token)
+         response = requests.get(url, headers=headers, **req_opts)
+         if response.status_code == 429:
+</pre><h3>Mutant 117</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -132,7 +132,7 @@
+         # not in cache; do http req
+         url = API_URL
+         if ip_address:
+-            url += "/" + ip_address
++            url -= "/" + ip_address
+         headers = handler_utils.get_headers(self.access_token)
+         response = requests.get(url, headers=headers, **req_opts)
+         if response.status_code == 429:
+</pre><h3>Mutant 118</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -132,7 +132,7 @@
+         # not in cache; do http req
+         url = API_URL
+         if ip_address:
+-            url += "/" + ip_address
++            url += "XX/XX" + ip_address
+         headers = handler_utils.get_headers(self.access_token)
+         response = requests.get(url, headers=headers, **req_opts)
+         if response.status_code == 429:
+</pre><h3>Mutant 119</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -132,7 +132,7 @@
+         # not in cache; do http req
+         url = API_URL
+         if ip_address:
+-            url += "/" + ip_address
++            url += "/" - ip_address
+         headers = handler_utils.get_headers(self.access_token)
+         response = requests.get(url, headers=headers, **req_opts)
+         if response.status_code == 429:
+</pre><h3>Mutant 120</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -133,7 +133,7 @@
+         url = API_URL
+         if ip_address:
+             url += "/" + ip_address
+-        headers = handler_utils.get_headers(self.access_token)
++        headers = None
+         response = requests.get(url, headers=headers, **req_opts)
+         if response.status_code == 429:
+             raise RequestQuotaExceededError()
+</pre><h3>Mutant 121</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -134,7 +134,7 @@
+         if ip_address:
+             url += "/" + ip_address
+         headers = handler_utils.get_headers(self.access_token)
+-        response = requests.get(url, headers=headers, **req_opts)
++        response = None
+         if response.status_code == 429:
+             raise RequestQuotaExceededError()
+         response.raise_for_status()
+</pre><h3>Mutant 122</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -135,7 +135,7 @@
+             url += "/" + ip_address
+         headers = handler_utils.get_headers(self.access_token)
+         response = requests.get(url, headers=headers, **req_opts)
+-        if response.status_code == 429:
++        if response.status_code != 429:
+             raise RequestQuotaExceededError()
+         response.raise_for_status()
+         details = response.json()
+</pre><h3>Mutant 123</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -135,7 +135,7 @@
+             url += "/" + ip_address
+         headers = handler_utils.get_headers(self.access_token)
+         response = requests.get(url, headers=headers, **req_opts)
+-        if response.status_code == 429:
++        if response.status_code == 430:
+             raise RequestQuotaExceededError()
+         response.raise_for_status()
+         details = response.json()
+</pre><h3>Mutant 124</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -138,7 +138,7 @@
+         if response.status_code == 429:
+             raise RequestQuotaExceededError()
+         response.raise_for_status()
+-        details = response.json()
++        details = None
+ 
+         # format & cache
+         handler_utils.format_details(
+</pre><h3>Mutant 125</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -149,7 +149,7 @@
+             self.countries_currencies,
+             self.continents,
+         )
+-        self.cache[cache_key(ip_address)] = details
++        self.cache[cache_key(ip_address)] = None
+ 
+         return Details(details)
+ 
+</pre><h3>Mutant 126</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -159,7 +159,7 @@
+         batch_size=None,
+         timeout_per_batch=BATCH_REQ_TIMEOUT_DEFAULT,
+         timeout_total=None,
+-        raise_on_fail=True,
++        raise_on_fail=False,
+     ):
+         """
+         Get details for a batch of IP addresses at once.
+</pre><h3>Mutant 127</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -190,7 +190,7 @@
+         quota errors.
+         Defaults to on.
+         """
+-        if batch_size == None:
++        if batch_size != None:
+             batch_size = BATCH_MAX_SIZE
+ 
+         result = {}
+</pre><h3>Mutant 128</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -191,7 +191,7 @@
+         Defaults to on.
+         """
+         if batch_size == None:
+-            batch_size = BATCH_MAX_SIZE
++            batch_size = None
+ 
+         result = {}
+ 
+</pre><h3>Mutant 129</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -193,7 +193,7 @@
+         if batch_size == None:
+             batch_size = BATCH_MAX_SIZE
+ 
+-        result = {}
++        result = None
+ 
+         # pre-populate with anything we've got in the cache, and keep around
+         # the IPs not in the cache.
+</pre><h3>Mutant 130</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -197,7 +197,7 @@
+ 
+         # pre-populate with anything we've got in the cache, and keep around
+         # the IPs not in the cache.
+-        lookup_addresses = []
++        lookup_addresses = None
+         for ip_address in ip_addresses:
+             # if the supplied IP address uses the objects defined in the
+             # built-in module ipaddress extract the appropriate string notation
+</pre><h3>Mutant 131</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -202,7 +202,7 @@
+             # if the supplied IP address uses the objects defined in the
+             # built-in module ipaddress extract the appropriate string notation
+             # before formatting the URL.
+-            if isinstance(ip_address, IPv4Address) or isinstance(
++            if isinstance(ip_address, IPv4Address) and isinstance(
+                 ip_address, IPv6Address
+             ):
+                 ip_address = ip_address.exploded
+</pre><h3>Mutant 132</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -205,7 +205,7 @@
+             if isinstance(ip_address, IPv4Address) or isinstance(
+                 ip_address, IPv6Address
+             ):
+-                ip_address = ip_address.exploded
++                ip_address = None
+ 
+             try:
+                 cached_ipaddr = self.cache[cache_key(ip_address)]
+</pre><h3>Mutant 133</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -208,7 +208,7 @@
+                 ip_address = ip_address.exploded
+ 
+             try:
+-                cached_ipaddr = self.cache[cache_key(ip_address)]
++                cached_ipaddr = None
+                 result[ip_address] = cached_ipaddr
+             except KeyError:
+                 lookup_addresses.append(ip_address)
+</pre><h3>Mutant 134</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -209,7 +209,7 @@
+ 
+             try:
+                 cached_ipaddr = self.cache[cache_key(ip_address)]
+-                result[ip_address] = cached_ipaddr
++                result[ip_address] = None
+             except KeyError:
+                 lookup_addresses.append(ip_address)
+ 
+</pre><h3>Mutant 135</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -214,7 +214,7 @@
+                 lookup_addresses.append(ip_address)
+ 
+         # all in cache - return early.
+-        if len(lookup_addresses) == 0:
++        if len(lookup_addresses) != 0:
+             return result
+ 
+         # do start timer if necessary
+</pre><h3>Mutant 136</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -214,7 +214,7 @@
+                 lookup_addresses.append(ip_address)
+ 
+         # all in cache - return early.
+-        if len(lookup_addresses) == 0:
++        if len(lookup_addresses) == 1:
+             return result
+ 
+         # do start timer if necessary
+</pre><h3>Mutant 137</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -218,7 +218,7 @@
+             return result
+ 
+         # do start timer if necessary
+-        if timeout_total is not None:
++        if timeout_total is  None:
+             start_time = time.time()
+ 
+         # prepare req http options
+</pre><h3>Mutant 138</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -219,7 +219,7 @@
+ 
+         # do start timer if necessary
+         if timeout_total is not None:
+-            start_time = time.time()
++            start_time = None
+ 
+         # prepare req http options
+         req_opts = {**self.request_options, "timeout": timeout_per_batch}
+</pre><h3>Mutant 140</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -222,7 +222,7 @@
+             start_time = time.time()
+ 
+         # prepare req http options
+-        req_opts = {**self.request_options, "timeout": timeout_per_batch}
++        req_opts = {**self.request_options, "XXtimeoutXX": timeout_per_batch}
+ 
+         # loop over batch chunks and do lookup for each.
+         url = API_URL + "/batch"
+</pre><h3>Mutant 141</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -222,7 +222,7 @@
+             start_time = time.time()
+ 
+         # prepare req http options
+-        req_opts = {**self.request_options, "timeout": timeout_per_batch}
++        req_opts = None
+ 
+         # loop over batch chunks and do lookup for each.
+         url = API_URL + "/batch"
+</pre><h3>Mutant 142</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -225,7 +225,7 @@
+         req_opts = {**self.request_options, "timeout": timeout_per_batch}
+ 
+         # loop over batch chunks and do lookup for each.
+-        url = API_URL + "/batch"
++        url = API_URL - "/batch"
+         headers = handler_utils.get_headers(self.access_token)
+         headers["content-type"] = "application/json"
+         for i in range(0, len(lookup_addresses), batch_size):
+</pre><h3>Mutant 143</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -225,7 +225,7 @@
+         req_opts = {**self.request_options, "timeout": timeout_per_batch}
+ 
+         # loop over batch chunks and do lookup for each.
+-        url = API_URL + "/batch"
++        url = API_URL + "XX/batchXX"
+         headers = handler_utils.get_headers(self.access_token)
+         headers["content-type"] = "application/json"
+         for i in range(0, len(lookup_addresses), batch_size):
+</pre><h3>Mutant 144</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -225,7 +225,7 @@
+         req_opts = {**self.request_options, "timeout": timeout_per_batch}
+ 
+         # loop over batch chunks and do lookup for each.
+-        url = API_URL + "/batch"
++        url = None
+         headers = handler_utils.get_headers(self.access_token)
+         headers["content-type"] = "application/json"
+         for i in range(0, len(lookup_addresses), batch_size):
+</pre><h3>Mutant 145</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -226,7 +226,7 @@
+ 
+         # loop over batch chunks and do lookup for each.
+         url = API_URL + "/batch"
+-        headers = handler_utils.get_headers(self.access_token)
++        headers = None
+         headers["content-type"] = "application/json"
+         for i in range(0, len(lookup_addresses), batch_size):
+             # quit if total timeout is reached.
+</pre><h3>Mutant 146</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -227,7 +227,7 @@
+         # loop over batch chunks and do lookup for each.
+         url = API_URL + "/batch"
+         headers = handler_utils.get_headers(self.access_token)
+-        headers["content-type"] = "application/json"
++        headers["XXcontent-typeXX"] = "application/json"
+         for i in range(0, len(lookup_addresses), batch_size):
+             # quit if total timeout is reached.
+             if (
+</pre><h3>Mutant 147</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -227,7 +227,7 @@
+         # loop over batch chunks and do lookup for each.
+         url = API_URL + "/batch"
+         headers = handler_utils.get_headers(self.access_token)
+-        headers["content-type"] = "application/json"
++        headers["content-type"] = "XXapplication/jsonXX"
+         for i in range(0, len(lookup_addresses), batch_size):
+             # quit if total timeout is reached.
+             if (
+</pre><h3>Mutant 148</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -227,7 +227,7 @@
+         # loop over batch chunks and do lookup for each.
+         url = API_URL + "/batch"
+         headers = handler_utils.get_headers(self.access_token)
+-        headers["content-type"] = "application/json"
++        headers["content-type"] = None
+         for i in range(0, len(lookup_addresses), batch_size):
+             # quit if total timeout is reached.
+             if (
+</pre><h3>Mutant 149</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -228,7 +228,7 @@
+         url = API_URL + "/batch"
+         headers = handler_utils.get_headers(self.access_token)
+         headers["content-type"] = "application/json"
+-        for i in range(0, len(lookup_addresses), batch_size):
++        for i in range(1, len(lookup_addresses), batch_size):
+             # quit if total timeout is reached.
+             if (
+                 timeout_total is not None
+</pre><h3>Mutant 150</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -231,7 +231,7 @@
+         for i in range(0, len(lookup_addresses), batch_size):
+             # quit if total timeout is reached.
+             if (
+-                timeout_total is not None
++                timeout_total is  None
+                 and time.time() - start_time > timeout_total
+             ):
+                 return handler_utils.return_or_fail(
+</pre><h3>Mutant 151</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -232,7 +232,7 @@
+             # quit if total timeout is reached.
+             if (
+                 timeout_total is not None
+-                and time.time() - start_time > timeout_total
++                and time.time() + start_time > timeout_total
+             ):
+                 return handler_utils.return_or_fail(
+                     raise_on_fail, TimeoutExceededError(), result
+</pre><h3>Mutant 152</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -232,7 +232,7 @@
+             # quit if total timeout is reached.
+             if (
+                 timeout_total is not None
+-                and time.time() - start_time > timeout_total
++                and time.time() - start_time >= timeout_total
+             ):
+                 return handler_utils.return_or_fail(
+                     raise_on_fail, TimeoutExceededError(), result
+</pre><h3>Mutant 153</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -231,8 +231,7 @@
+         for i in range(0, len(lookup_addresses), batch_size):
+             # quit if total timeout is reached.
+             if (
+-                timeout_total is not None
+-                and time.time() - start_time > timeout_total
++                timeout_total is not None or time.time() - start_time > timeout_total
+             ):
+                 return handler_utils.return_or_fail(
+                     raise_on_fail, TimeoutExceededError(), result
+</pre><h3>Mutant 154</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -238,7 +238,7 @@
+                     raise_on_fail, TimeoutExceededError(), result
+                 )
+ 
+-            chunk = lookup_addresses[i : i + batch_size]
++            chunk = lookup_addresses[i : i - batch_size]
+ 
+             # lookup
+             try:
+</pre><h3>Mutant 155</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -238,7 +238,7 @@
+                     raise_on_fail, TimeoutExceededError(), result
+                 )
+ 
+-            chunk = lookup_addresses[i : i + batch_size]
++            chunk = None
+ 
+             # lookup
+             try:
+</pre><h3>Mutant 156</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -242,9 +242,7 @@
+ 
+             # lookup
+             try:
+-                response = requests.post(
+-                    url, json=chunk, headers=headers, **req_opts
+-                )
++                response = None
+             except Exception as e:
+                 return handler_utils.return_or_fail(raise_on_fail, e, result)
+ 
+</pre><h3>Mutant 157</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -250,7 +250,7 @@
+ 
+             # fail on bad status codes
+             try:
+-                if response.status_code == 429:
++                if response.status_code != 429:
+                     raise RequestQuotaExceededError()
+                 response.raise_for_status()
+             except Exception as e:
+</pre><h3>Mutant 158</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -250,7 +250,7 @@
+ 
+             # fail on bad status codes
+             try:
+-                if response.status_code == 429:
++                if response.status_code == 430:
+                     raise RequestQuotaExceededError()
+                 response.raise_for_status()
+             except Exception as e:
+</pre><h3>Mutant 159</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -257,7 +257,7 @@
+                 return handler_utils.return_or_fail(raise_on_fail, e, result)
+ 
+             # fill cache
+-            json_response = response.json()
++            json_response = None
+             for ip_address, details in json_response.items():
+                 self.cache[cache_key(ip_address)] = details
+ 
+</pre><h3>Mutant 160</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -259,7 +259,7 @@
+             # fill cache
+             json_response = response.json()
+             for ip_address, details in json_response.items():
+-                self.cache[cache_key(ip_address)] = details
++                self.cache[cache_key(ip_address)] = None
+ 
+             # merge cached results with new lookup
+             result.update(json_response)
+</pre><h3>Mutant 162</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -288,7 +288,7 @@
+             # if the supplied IP address uses the objects defined in the
+             # built-in module ipaddress extract the appropriate string notation
+             # before formatting the URL.
+-            if isinstance(ip, IPv4Address) or isinstance(ip, IPv6Address):
++            if isinstance(ip, IPv4Address) and isinstance(ip, IPv6Address):
+                 ip = ip.exploded
+ 
+             ip_strs.append(ip)
+</pre><h3>Mutant 163</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -289,7 +289,7 @@
+             # built-in module ipaddress extract the appropriate string notation
+             # before formatting the URL.
+             if isinstance(ip, IPv4Address) or isinstance(ip, IPv6Address):
+-                ip = ip.exploded
++                ip = None
+ 
+             ip_strs.append(ip)
+ 
+</pre><h3>Mutant 169</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -296,7 +296,7 @@
+         req_opts = {**self.request_options}
+         url = f"{API_URL}/map?cli=1"
+         headers = handler_utils.get_headers(None)
+-        headers["content-type"] = "application/json"
++        headers["XXcontent-typeXX"] = "application/json"
+         response = requests.post(
+             url, json=ip_strs, headers=headers, **req_opts
+         )
+</pre><h3>Mutant 171</h3><pre>--- ipinfo\handler.py
++++ ipinfo\handler.py
+@@ -296,7 +296,7 @@
+         req_opts = {**self.request_options}
+         url = f"{API_URL}/map?cli=1"
+         headers = handler_utils.get_headers(None)
+-        headers["content-type"] = "application/json"
++        headers["content-type"] = None
+         response = requests.post(
+             url, json=ip_strs, headers=headers, **req_opts
+         )
+</pre></body></html>

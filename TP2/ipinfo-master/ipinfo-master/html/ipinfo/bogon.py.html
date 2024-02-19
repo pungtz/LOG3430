@@ -1,0 +1,23 @@
+<html><body><h1>ipinfo\bogon.py</h1>Killed 56 out of 58 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 1</h3><pre>--- ipinfo\bogon.py
++++ ipinfo\bogon.py
+@@ -3,7 +3,7 @@
+ 
+ def is_bogon(ip_address):
+     for network in BOGON_NETWORKS:
+-        if IP(ip_address) in network:
++        if IP(ip_address) not in network:
+             return True
+     return False
+ 
+</pre><h3>Mutant 3</h3><pre>--- ipinfo\bogon.py
++++ ipinfo\bogon.py
+@@ -5,7 +5,7 @@
+     for network in BOGON_NETWORKS:
+         if IP(ip_address) in network:
+             return True
+-    return False
++    return True
+ 
+ 
+ BOGON_NETWORKS = [
+</pre></body></html>

@@ -1,0 +1,632 @@
+<html><body><h1>ipinfo\handler_utils.py</h1>Killed 19 out of 76 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 284</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -25,7 +25,7 @@
+ CONTINENT_FILE_DEFAULT = "continent.json"
+ 
+ # The max amount of IPs allowed by the API per batch request.
+-BATCH_MAX_SIZE = 1000
++BATCH_MAX_SIZE = 1001
+ 
+ # The default max size of the cache in terms of number of items.
+ CACHE_MAXSIZE = 4096
+</pre><h3>Mutant 285</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -25,7 +25,7 @@
+ CONTINENT_FILE_DEFAULT = "continent.json"
+ 
+ # The max amount of IPs allowed by the API per batch request.
+-BATCH_MAX_SIZE = 1000
++BATCH_MAX_SIZE = None
+ 
+ # The default max size of the cache in terms of number of items.
+ CACHE_MAXSIZE = 4096
+</pre><h3>Mutant 286</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -28,7 +28,7 @@
+ BATCH_MAX_SIZE = 1000
+ 
+ # The default max size of the cache in terms of number of items.
+-CACHE_MAXSIZE = 4096
++CACHE_MAXSIZE = 4097
+ 
+ # The default TTL of the cache in seconds
+ CACHE_TTL = 60 * 60 * 24
+</pre><h3>Mutant 287</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -28,7 +28,7 @@
+ BATCH_MAX_SIZE = 1000
+ 
+ # The default max size of the cache in terms of number of items.
+-CACHE_MAXSIZE = 4096
++CACHE_MAXSIZE = None
+ 
+ # The default TTL of the cache in seconds
+ CACHE_TTL = 60 * 60 * 24
+</pre><h3>Mutant 288</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -31,7 +31,7 @@
+ CACHE_MAXSIZE = 4096
+ 
+ # The default TTL of the cache in seconds
+-CACHE_TTL = 60 * 60 * 24
++CACHE_TTL = 61 * 60 * 24
+ 
+ # The current version of the cached data.
+ # Update this if the data being cached has changed in shape for the same key.
+</pre><h3>Mutant 289</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -31,7 +31,7 @@
+ CACHE_MAXSIZE = 4096
+ 
+ # The default TTL of the cache in seconds
+-CACHE_TTL = 60 * 60 * 24
++CACHE_TTL = 60 / 60 * 24
+ 
+ # The current version of the cached data.
+ # Update this if the data being cached has changed in shape for the same key.
+</pre><h3>Mutant 290</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -31,7 +31,7 @@
+ CACHE_MAXSIZE = 4096
+ 
+ # The default TTL of the cache in seconds
+-CACHE_TTL = 60 * 60 * 24
++CACHE_TTL = 60 * 61 * 24
+ 
+ # The current version of the cached data.
+ # Update this if the data being cached has changed in shape for the same key.
+</pre><h3>Mutant 291</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -31,7 +31,7 @@
+ CACHE_MAXSIZE = 4096
+ 
+ # The default TTL of the cache in seconds
+-CACHE_TTL = 60 * 60 * 24
++CACHE_TTL = 60 * 60 / 24
+ 
+ # The current version of the cached data.
+ # Update this if the data being cached has changed in shape for the same key.
+</pre><h3>Mutant 292</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -31,7 +31,7 @@
+ CACHE_MAXSIZE = 4096
+ 
+ # The default TTL of the cache in seconds
+-CACHE_TTL = 60 * 60 * 24
++CACHE_TTL = 60 * 60 * 25
+ 
+ # The current version of the cached data.
+ # Update this if the data being cached has changed in shape for the same key.
+</pre><h3>Mutant 293</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -31,7 +31,7 @@
+ CACHE_MAXSIZE = 4096
+ 
+ # The default TTL of the cache in seconds
+-CACHE_TTL = 60 * 60 * 24
++CACHE_TTL = None
+ 
+ # The current version of the cached data.
+ # Update this if the data being cached has changed in shape for the same key.
+</pre><h3>Mutant 294</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -35,7 +35,7 @@
+ 
+ # The current version of the cached data.
+ # Update this if the data being cached has changed in shape for the same key.
+-CACHE_KEY_VSN = "1"
++CACHE_KEY_VSN = "XX1XX"
+ 
+ # The default request timeout for per-IP requests.
+ REQUEST_TIMEOUT_DEFAULT = 2
+</pre><h3>Mutant 295</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -35,7 +35,7 @@
+ 
+ # The current version of the cached data.
+ # Update this if the data being cached has changed in shape for the same key.
+-CACHE_KEY_VSN = "1"
++CACHE_KEY_VSN = None
+ 
+ # The default request timeout for per-IP requests.
+ REQUEST_TIMEOUT_DEFAULT = 2
+</pre><h3>Mutant 296</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -38,7 +38,7 @@
+ CACHE_KEY_VSN = "1"
+ 
+ # The default request timeout for per-IP requests.
+-REQUEST_TIMEOUT_DEFAULT = 2
++REQUEST_TIMEOUT_DEFAULT = 3
+ 
+ # The default request timeout for batch requests.
+ BATCH_REQ_TIMEOUT_DEFAULT = 5
+</pre><h3>Mutant 297</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -38,7 +38,7 @@
+ CACHE_KEY_VSN = "1"
+ 
+ # The default request timeout for per-IP requests.
+-REQUEST_TIMEOUT_DEFAULT = 2
++REQUEST_TIMEOUT_DEFAULT = None
+ 
+ # The default request timeout for batch requests.
+ BATCH_REQ_TIMEOUT_DEFAULT = 5
+</pre><h3>Mutant 298</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -41,7 +41,7 @@
+ REQUEST_TIMEOUT_DEFAULT = 2
+ 
+ # The default request timeout for batch requests.
+-BATCH_REQ_TIMEOUT_DEFAULT = 5
++BATCH_REQ_TIMEOUT_DEFAULT = 6
+ 
+ 
+ def get_headers(access_token):
+</pre><h3>Mutant 299</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -41,7 +41,7 @@
+ REQUEST_TIMEOUT_DEFAULT = 2
+ 
+ # The default request timeout for batch requests.
+-BATCH_REQ_TIMEOUT_DEFAULT = 5
++BATCH_REQ_TIMEOUT_DEFAULT = None
+ 
+ 
+ def get_headers(access_token):
+</pre><h3>Mutant 301</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -47,7 +47,7 @@
+ def get_headers(access_token):
+     """Build headers for request to IPinfo API."""
+     headers = {
+-        "user-agent": "IPinfoClient/Python{version}/{sdk_version}".format(
++        "user-agent": "XXIPinfoClient/Python{version}/{sdk_version}XX".format(
+             version=sys.version_info[0], sdk_version=SDK_VERSION
+         ),
+         "accept": "application/json",
+</pre><h3>Mutant 302</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -48,7 +48,7 @@
+     """Build headers for request to IPinfo API."""
+     headers = {
+         "user-agent": "IPinfoClient/Python{version}/{sdk_version}".format(
+-            version=sys.version_info[0], sdk_version=SDK_VERSION
++            version=sys.version_info[1], sdk_version=SDK_VERSION
+         ),
+         "accept": "application/json",
+     }
+</pre><h3>Mutant 304</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -50,7 +50,7 @@
+         "user-agent": "IPinfoClient/Python{version}/{sdk_version}".format(
+             version=sys.version_info[0], sdk_version=SDK_VERSION
+         ),
+-        "accept": "application/json",
++        "accept": "XXapplication/jsonXX",
+     }
+ 
+     if access_token:
+</pre><h3>Mutant 307</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -54,7 +54,7 @@
+     }
+ 
+     if access_token:
+-        headers["authorization"] = "Bearer {}".format(access_token)
++        headers["authorization"] = "XXBearer {}XX".format(access_token)
+ 
+     return headers
+ 
+</pre><h3>Mutant 308</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -54,7 +54,7 @@
+     }
+ 
+     if access_token:
+-        headers["authorization"] = "Bearer {}".format(access_token)
++        headers["authorization"] = None
+ 
+     return headers
+ 
+</pre><h3>Mutant 309</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -70,7 +70,7 @@
+     """
+     Format details given a countries object.
+     """
+-    details["country_name"] = countries.get(details.get("country"))
++    details["XXcountry_nameXX"] = countries.get(details.get("country"))
+     details["isEU"] = details.get("country") in eu_countries
+     details["country_flag"] = copy.deepcopy(
+         countries_flags.get(details.get("country"))
+</pre><h3>Mutant 310</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -70,7 +70,7 @@
+     """
+     Format details given a countries object.
+     """
+-    details["country_name"] = countries.get(details.get("country"))
++    details["country_name"] = countries.get(details.get("XXcountryXX"))
+     details["isEU"] = details.get("country") in eu_countries
+     details["country_flag"] = copy.deepcopy(
+         countries_flags.get(details.get("country"))
+</pre><h3>Mutant 311</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -70,7 +70,7 @@
+     """
+     Format details given a countries object.
+     """
+-    details["country_name"] = countries.get(details.get("country"))
++    details["country_name"] = None
+     details["isEU"] = details.get("country") in eu_countries
+     details["country_flag"] = copy.deepcopy(
+         countries_flags.get(details.get("country"))
+</pre><h3>Mutant 312</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -71,7 +71,7 @@
+     Format details given a countries object.
+     """
+     details["country_name"] = countries.get(details.get("country"))
+-    details["isEU"] = details.get("country") in eu_countries
++    details["XXisEUXX"] = details.get("country") in eu_countries
+     details["country_flag"] = copy.deepcopy(
+         countries_flags.get(details.get("country"))
+     )
+</pre><h3>Mutant 313</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -71,7 +71,7 @@
+     Format details given a countries object.
+     """
+     details["country_name"] = countries.get(details.get("country"))
+-    details["isEU"] = details.get("country") in eu_countries
++    details["isEU"] = details.get("XXcountryXX") in eu_countries
+     details["country_flag"] = copy.deepcopy(
+         countries_flags.get(details.get("country"))
+     )
+</pre><h3>Mutant 314</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -71,7 +71,7 @@
+     Format details given a countries object.
+     """
+     details["country_name"] = countries.get(details.get("country"))
+-    details["isEU"] = details.get("country") in eu_countries
++    details["isEU"] = details.get("country") not in eu_countries
+     details["country_flag"] = copy.deepcopy(
+         countries_flags.get(details.get("country"))
+     )
+</pre><h3>Mutant 315</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -71,7 +71,7 @@
+     Format details given a countries object.
+     """
+     details["country_name"] = countries.get(details.get("country"))
+-    details["isEU"] = details.get("country") in eu_countries
++    details["isEU"] = None
+     details["country_flag"] = copy.deepcopy(
+         countries_flags.get(details.get("country"))
+     )
+</pre><h3>Mutant 316</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -72,7 +72,7 @@
+     """
+     details["country_name"] = countries.get(details.get("country"))
+     details["isEU"] = details.get("country") in eu_countries
+-    details["country_flag"] = copy.deepcopy(
++    details["XXcountry_flagXX"] = copy.deepcopy(
+         countries_flags.get(details.get("country"))
+     )
+     details["country_currency"] = copy.deepcopy(
+</pre><h3>Mutant 317</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -72,7 +72,7 @@
+     """
+     details["country_name"] = countries.get(details.get("country"))
+     details["isEU"] = details.get("country") in eu_countries
+-    details["country_flag"] = copy.deepcopy(
++    details["country_flag"] = copy.copy(
+         countries_flags.get(details.get("country"))
+     )
+     details["country_currency"] = copy.deepcopy(
+</pre><h3>Mutant 318</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -73,7 +73,7 @@
+     details["country_name"] = countries.get(details.get("country"))
+     details["isEU"] = details.get("country") in eu_countries
+     details["country_flag"] = copy.deepcopy(
+-        countries_flags.get(details.get("country"))
++        countries_flags.get(details.get("XXcountryXX"))
+     )
+     details["country_currency"] = copy.deepcopy(
+         countries_currencies.get(details.get("country"))
+</pre><h3>Mutant 319</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -72,9 +72,7 @@
+     """
+     details["country_name"] = countries.get(details.get("country"))
+     details["isEU"] = details.get("country") in eu_countries
+-    details["country_flag"] = copy.deepcopy(
+-        countries_flags.get(details.get("country"))
+-    )
++    details["country_flag"] = None
+     details["country_currency"] = copy.deepcopy(
+         countries_currencies.get(details.get("country"))
+     )
+</pre><h3>Mutant 320</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -75,7 +75,7 @@
+     details["country_flag"] = copy.deepcopy(
+         countries_flags.get(details.get("country"))
+     )
+-    details["country_currency"] = copy.deepcopy(
++    details["XXcountry_currencyXX"] = copy.deepcopy(
+         countries_currencies.get(details.get("country"))
+     )
+     details["continent"] = copy.deepcopy(
+</pre><h3>Mutant 321</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -75,7 +75,7 @@
+     details["country_flag"] = copy.deepcopy(
+         countries_flags.get(details.get("country"))
+     )
+-    details["country_currency"] = copy.deepcopy(
++    details["country_currency"] = copy.copy(
+         countries_currencies.get(details.get("country"))
+     )
+     details["continent"] = copy.deepcopy(
+</pre><h3>Mutant 322</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -76,7 +76,7 @@
+         countries_flags.get(details.get("country"))
+     )
+     details["country_currency"] = copy.deepcopy(
+-        countries_currencies.get(details.get("country"))
++        countries_currencies.get(details.get("XXcountryXX"))
+     )
+     details["continent"] = copy.deepcopy(
+         continents.get(details.get("country"))
+</pre><h3>Mutant 323</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -75,9 +75,7 @@
+     details["country_flag"] = copy.deepcopy(
+         countries_flags.get(details.get("country"))
+     )
+-    details["country_currency"] = copy.deepcopy(
+-        countries_currencies.get(details.get("country"))
+-    )
++    details["country_currency"] = None
+     details["continent"] = copy.deepcopy(
+         continents.get(details.get("country"))
+     )
+</pre><h3>Mutant 324</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -78,7 +78,7 @@
+     details["country_currency"] = copy.deepcopy(
+         countries_currencies.get(details.get("country"))
+     )
+-    details["continent"] = copy.deepcopy(
++    details["XXcontinentXX"] = copy.deepcopy(
+         continents.get(details.get("country"))
+     )
+     details["latitude"], details["longitude"] = read_coords(details.get("loc"))
+</pre><h3>Mutant 325</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -78,7 +78,7 @@
+     details["country_currency"] = copy.deepcopy(
+         countries_currencies.get(details.get("country"))
+     )
+-    details["continent"] = copy.deepcopy(
++    details["continent"] = copy.copy(
+         continents.get(details.get("country"))
+     )
+     details["latitude"], details["longitude"] = read_coords(details.get("loc"))
+</pre><h3>Mutant 326</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -79,7 +79,7 @@
+         countries_currencies.get(details.get("country"))
+     )
+     details["continent"] = copy.deepcopy(
+-        continents.get(details.get("country"))
++        continents.get(details.get("XXcountryXX"))
+     )
+     details["latitude"], details["longitude"] = read_coords(details.get("loc"))
+ 
+</pre><h3>Mutant 327</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -78,9 +78,7 @@
+     details["country_currency"] = copy.deepcopy(
+         countries_currencies.get(details.get("country"))
+     )
+-    details["continent"] = copy.deepcopy(
+-        continents.get(details.get("country"))
+-    )
++    details["continent"] = None
+     details["latitude"], details["longitude"] = read_coords(details.get("loc"))
+ 
+ 
+</pre><h3>Mutant 328</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -81,7 +81,7 @@
+     details["continent"] = copy.deepcopy(
+         continents.get(details.get("country"))
+     )
+-    details["latitude"], details["longitude"] = read_coords(details.get("loc"))
++    details["XXlatitudeXX"], details["longitude"] = read_coords(details.get("loc"))
+ 
+ 
+ def read_coords(location):
+</pre><h3>Mutant 329</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -81,7 +81,7 @@
+     details["continent"] = copy.deepcopy(
+         continents.get(details.get("country"))
+     )
+-    details["latitude"], details["longitude"] = read_coords(details.get("loc"))
++    details["latitude"], details["XXlongitudeXX"] = read_coords(details.get("loc"))
+ 
+ 
+ def read_coords(location):
+</pre><h3>Mutant 330</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -81,7 +81,7 @@
+     details["continent"] = copy.deepcopy(
+         continents.get(details.get("country"))
+     )
+-    details["latitude"], details["longitude"] = read_coords(details.get("loc"))
++    details["latitude"], details["longitude"] = read_coords(details.get("XXlocXX"))
+ 
+ 
+ def read_coords(location):
+</pre><h3>Mutant 331</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -81,7 +81,7 @@
+     details["continent"] = copy.deepcopy(
+         continents.get(details.get("country"))
+     )
+-    details["latitude"], details["longitude"] = read_coords(details.get("loc"))
++    details["latitude"], details["longitude"] = None
+ 
+ 
+ def read_coords(location):
+</pre><h3>Mutant 332</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -91,7 +91,7 @@
+ 
+     Returns None for each tuple item if the form is invalid.
+     """
+-    lat, lon = None, None
++    lat, lon = None
+     coords = tuple(location.split(",")) if location else ""
+     if len(coords) == 2 and coords[0] and coords[1]:
+         lat, lon = coords[0], coords[1]
+</pre><h3>Mutant 333</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -92,7 +92,7 @@
+     Returns None for each tuple item if the form is invalid.
+     """
+     lat, lon = None, None
+-    coords = tuple(location.split(",")) if location else ""
++    coords = tuple(location.split("XX,XX")) if location else ""
+     if len(coords) == 2 and coords[0] and coords[1]:
+         lat, lon = coords[0], coords[1]
+     return lat, lon
+</pre><h3>Mutant 334</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -92,7 +92,7 @@
+     Returns None for each tuple item if the form is invalid.
+     """
+     lat, lon = None, None
+-    coords = tuple(location.split(",")) if location else ""
++    coords = tuple(location.split(",")) if location else "XXXX"
+     if len(coords) == 2 and coords[0] and coords[1]:
+         lat, lon = coords[0], coords[1]
+     return lat, lon
+</pre><h3>Mutant 335</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -92,7 +92,7 @@
+     Returns None for each tuple item if the form is invalid.
+     """
+     lat, lon = None, None
+-    coords = tuple(location.split(",")) if location else ""
++    coords = None
+     if len(coords) == 2 and coords[0] and coords[1]:
+         lat, lon = coords[0], coords[1]
+     return lat, lon
+</pre><h3>Mutant 336</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -93,7 +93,7 @@
+     """
+     lat, lon = None, None
+     coords = tuple(location.split(",")) if location else ""
+-    if len(coords) == 2 and coords[0] and coords[1]:
++    if len(coords) != 2 and coords[0] and coords[1]:
+         lat, lon = coords[0], coords[1]
+     return lat, lon
+ 
+</pre><h3>Mutant 337</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -93,7 +93,7 @@
+     """
+     lat, lon = None, None
+     coords = tuple(location.split(",")) if location else ""
+-    if len(coords) == 2 and coords[0] and coords[1]:
++    if len(coords) == 3 and coords[0] and coords[1]:
+         lat, lon = coords[0], coords[1]
+     return lat, lon
+ 
+</pre><h3>Mutant 338</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -93,7 +93,7 @@
+     """
+     lat, lon = None, None
+     coords = tuple(location.split(",")) if location else ""
+-    if len(coords) == 2 and coords[0] and coords[1]:
++    if len(coords) == 2 and coords[1] and coords[1]:
+         lat, lon = coords[0], coords[1]
+     return lat, lon
+ 
+</pre><h3>Mutant 339</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -93,7 +93,7 @@
+     """
+     lat, lon = None, None
+     coords = tuple(location.split(",")) if location else ""
+-    if len(coords) == 2 and coords[0] and coords[1]:
++    if len(coords) == 2 and coords[0] and coords[2]:
+         lat, lon = coords[0], coords[1]
+     return lat, lon
+ 
+</pre><h3>Mutant 340</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -93,7 +93,7 @@
+     """
+     lat, lon = None, None
+     coords = tuple(location.split(",")) if location else ""
+-    if len(coords) == 2 and coords[0] and coords[1]:
++    if len(coords) == 2 or coords[0] and coords[1]:
+         lat, lon = coords[0], coords[1]
+     return lat, lon
+ 
+</pre><h3>Mutant 341</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -94,7 +94,7 @@
+     lat, lon = None, None
+     coords = tuple(location.split(",")) if location else ""
+     if len(coords) == 2 and coords[0] and coords[1]:
+-        lat, lon = coords[0], coords[1]
++        lat, lon = coords[1], coords[1]
+     return lat, lon
+ 
+ 
+</pre><h3>Mutant 342</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -94,7 +94,7 @@
+     lat, lon = None, None
+     coords = tuple(location.split(",")) if location else ""
+     if len(coords) == 2 and coords[0] and coords[1]:
+-        lat, lon = coords[0], coords[1]
++        lat, lon = coords[0], coords[2]
+     return lat, lon
+ 
+ 
+</pre><h3>Mutant 343</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -94,7 +94,7 @@
+     lat, lon = None, None
+     coords = tuple(location.split(",")) if location else ""
+     if len(coords) == 2 and coords[0] and coords[1]:
+-        lat, lon = coords[0], coords[1]
++        lat, lon = None
+     return lat, lon
+ 
+ 
+</pre><h3>Mutant 347</h3><pre>--- ipinfo\handler_utils.py
++++ ipinfo\handler_utils.py
+@@ -120,5 +120,5 @@
+     """
+     Transforms a user-input key into a versioned cache key.
+     """
+-    return f"{k}:{CACHE_KEY_VSN}"
++    return f"XX{k}:{CACHE_KEY_VSN}XX"
+ 
+</pre></body></html>
